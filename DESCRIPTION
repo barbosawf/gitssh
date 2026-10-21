@@ -1,0 +1,32 @@
+Package: gitssh
+Title: Multi-Account Git, GitHub and SSH Helpers
+Version: 0.0.0.9000
+Authors@R: 
+    person("Wagner", "Faria Barbosa", , "barbosawf@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8725-2099"))
+Description: Helpers to work with Git and GitHub from R when more than one
+    account (or more than one machine) is involved. Builds and diagnoses
+    multi-account SSH configurations with host aliases, resolves the
+    physical home directory when cloud-sync tools redirect user profiles,
+    clones, pulls and pushes through the right identity, creates new
+    repositories under the right account with guard rails, and wraps
+    stash and forced reset/push operations with backups. Cloning and
+    pulling public or third-party repositories works without any SSH key.
+    Ships a trilingual (Portuguese, English, Spanish) cheat sheet,
+    git_tips().
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports: 
+    stats,
+    utils
+Suggests: 
+    gh,
+    withr,
+    testthat (>= 3.2.0)
+Config/testthat/edition: 3
+Depends: 
+    R (>= 4.1.0)
+URL: https://github.com/barbosawf/gitssh
+BugReports: https://github.com/barbosawf/gitssh/issues
+Config/roxygen2/version: 8.1.1
